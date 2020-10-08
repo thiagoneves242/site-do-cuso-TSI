@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>pop-up1</title>
+    <!--linkagem ao css-->
+  <link href="css/popup.css" rel="stylesheet">
+  <!--linkagem ao java script-->
+  <script defer src="js/popup.js"></script>
+
+  <style type="text/css">
+            body{
+        background-image: url(images/ifb.png);
+        background-attachment: fixed;
+        background-size:90%;
+        background-repeat: no-repeat;
+      }
+  </style>
+</head>
+<body>
+  <section><!--botao para abrir o modal-->
+      <button  class="btn btn-info" data-modal-target="#modal"><a id="a1">clik aqui</a></button>
+    <!--conteiner do nosso modal-->
+      <div class="modal" id="modal">
+    <!--cabeçalho do modal-->
+        <div class="modal-header">
+          <div class="title">Tecnologia em sistemas para Internet</div>
+    <!--botao para fechar o modal -->
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+    <!--corpo do modal-->
+        <div class="modal-body">
+    	    	
+    	    	<p id="P_modal">
+    			    Empresas de planejamento, desenvolvimento de projetos, assistência técnica e consultoria. Empresas de tecnologia. Empresas em geral (indústria, comércio e serviços). Organizações não-governamentais. Órgãos públicos. Institutos e Centros de Pesquisa. Instituições de Ensino, mediante formação requerida pela legislação vigente.
+    				  A carreira para este profissional é muito promissora, uma vez que pode ser desenvolvida tanto no setor público como no privado e em empresas do terceiro setor.
+    			</p>
+
+    			<p id="P_modal" > 
+    				Na prática, esta profissão está ligada à área de Informática, a qual envolve a administração dos recursos de infraestrutura física e lógica de ambientes informatizados, além de definir parâmetros de utilização de sistemas, cuidar da implantação e da documentação rotinas, controlar os níveis de serviço de sistemas operacionais e banco de dados, gerenciar os recursos humanos envolvidos nesses processos e exercer a gestão dos sistemas implantados.
+    			</p>
+        </div>
+      </div>
+  </section>
+<!-- galeria de fofos  -->
+  <section>
+    
+  </section>
+  <!--sobrepoem o modal na pagina -->
+  <div id="overlay"></div>
+</body>
+</html>

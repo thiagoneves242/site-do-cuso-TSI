@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>pop-up3</title>
+    <!--linkagem ao css-->
+  <link href="css/popup.css" rel="stylesheet">
+  <!--linkagem ao java script-->
+  <script defer src="js/popup.js"></script>
+  <style type="text/css">
+            body{
+        background-image: url(images/ifb.png);
+        background-attachment: fixed;
+        background-size:90%;
+        background-repeat: no-repeat;
+      }
+  </style>
+</head>
+<body>
+<!--botao para abrir o modal-->
+  <button class="btn btn-info"data-modal-target="#modal" id="table"><a id="a1">click aqui</a></button>
+<!--conteiner do nosso modal-->
+  <div class="modal" id="modal">
+<!--cabeçalho do modal-->
+    <div class="modal-header">
+      <div class="title">Projeto de Plano de Curso/PPC</div>
+<!--botao para fechar o modal -->
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+<!--corpo do modal-->
+    <div class="modal-body">	
+	    <table>
+        <div>
+            <tr>
+              <th>sem</th> <th>seq</th> <th>nome do componente</th> <th>pré requsito</th> <th>h</th>
+            </tr>
+            <tr id="amarelo">
+              <td>1 </td>      <td>1</td>   <td>logica de programção 1</td>   <td>-</td>      <td>120</td>  
+            </tr>
+            <tr id="verde">
+              <td>1</td>      <td>2</td>    <td>comstrução de paginas 1</td>  <td>-</td>      <td>80</td> 
+            </tr>
+            <tr id="azul">
+              <td>1</td>      <td>3</td>    <td>introdução a computação</td>  <td>-</td>      <td>80</td> 
+            </tr>
+            <tr id="azul">
+              <td>1</td>      <td>4</td>    <td>redes de computadores</td>    <td>-</td>      <td>80</td> 
+            </tr>
+            <tr id="roxo">
+              <td>1</td>      <td>5</td>    <td>metodologia ciêntifica</td>   <td>-</td>      <td>40</td> 
+            </tr>
+            <tr>
+              <td></td>     <td></td>   <td></td> <td id="branco">tota</td> <td id="branco">400</td>
+            </tr>
+          </div>
+        </table>
+
+        <table>
+          <div>
+            <tr>
+              <th>sem</th> <th>seq</th> <th>nome do componente</th> <th>pré requsito</th> <th>h</th>
+            </tr>
+            <tr id="amarelo">
+              <td>2</td>      <td>6</td>    <td>logica de programção 2</td>   <td>1</td>      <td>120</td>  
+            </tr>
+            <tr id="verde">
+              <td>2</td>      <td>7</td>    <td>comstrução de paginas 2</td>  <td>2</td>      <td>80</td> 
+            </tr>
+            <tr id="azul">
+              <td>2</td>      <td>8</td>    <td>sistemas operacionais</td>  <td>3,4</td>      <td>80</td> 
+            </tr>
+            <tr id="amarelo">
+              <td>2</td>      <td>9</td>    <td>engenharia de software</td>   <td>-</td>      <td>80</td> 
+            </tr>
+            <tr id="roxo">
+              <td>2</td>      <td>10</td>   <td>gestão de TI</td>   <td>-</td>      <td>40</td> 
+            </tr>
+            <tr>
+              <td></td> <td></td>   <td></td> <td id="branco">total</td> <td id="branco">400</td>
+            </tr>
+          </div>
+        </table>
+      
+        <table>
+          <div>
+            <tr>
+              <th>sem</th> <th>seq</th> <th>nome do componente</th> <th>pré requsito</th> <th>h</th>
+            </tr>
+            <tr id="amarelo">
+              <td>3</td> <td>11</td>  <td>programção orientação a objeto</td> <td>6</td><td>120</td>  
+            </tr>
+            <tr id="azul">
+              <td>3</td>    <td>12</td>  <td>banco de dados 1</td>         <td>-</td>  <td>80</td>  
+            </tr>
+            <tr id="verde">
+              <td>3</td>  <td>13</td>  <td>adm de serviços para internet</td> <td>8</td> <td>80</td>  
+            </tr>
+            <tr id="amarelo">
+              <td>3</td>  <td>14</td> <td>APSI</td><td>9</td> <td>80</td> 
+            </tr>
+            <tr id="verde">
+              <td>3</td>  <td>15</td>  <td>multimidia para internet</td> <td>7</td> <td>40</td> 
+            </tr>
+            <tr>
+              <td></td>   <td></td> <td></td> <td id="branco">total</td> <td id="branco">400</td>
+            </tr>
+          </div>
+        </table>
+
+        <table id='tabela' border="1" style="position:absolute; left: 410px; top: 80px;">
+          <div>
+            <tr>
+              <th>sem</th> <th>seq</th> <th>nome do componente</th> <th>pré requsito</th> <th>h</th>
+            </tr>
+            <tr id="amarelo">
+              <td>4</td>      <td>16</td>   <td>programação p internet 1</td>   <td>11</td>      <td>120</td> 
+            </tr>
+            <tr id="roxo">
+              <td>4</td>      <td>17</td>   <td>empreendedorismo</td> <td>-</td>      <td>80</td> 
+            </tr>
+            <tr id="azul">
+              <td>4</td>      <td>18</td>   <td>bacon de dados 2</td> <td>12</td>      <td>80</td>  
+            </tr>
+            <tr id="azul">
+              <td>4</td>      <td>19</td>   <td>segurança e auditoria de sistemas</td>    <td>-</td>      <td>80</td> 
+            </tr>
+            <tr id="branco">
+              <td>4</td>      <td>20</td>   <td>optativas</td>   <td>8</td>      <td>40</td> 
+            </tr>
+            <tr id="roxo">
+              <td>4</td>      <td>21</td>   <td>pjt/trabalho de conclusão cursu</td>    <td>-</td>      <td>40</td> 
+            </tr>
+            <tr>
+              <td></td>     <td></td>   <td></td> <td id="branco">total</td> <td id="branco">400</td>
+            </tr>
+          </div>
+        </table>
+
+        <table id='tabela' border="1" style="position:absolute; left: 405px; top: 360px;">
+          <div>
+            <tr>
+              <th>sem</th> <th>seq</th> <th>nome do componente</th> <th>pré requsito</th> <th>h</th>
+            </tr>
+            <tr id="amarelo">
+              <td>5</td>      <td>18</td> <td>programação p internet 2</td> <td>16</td> <td>80</td> 
+            </tr>
+            <tr id="roxo">
+              <td>4</td>      <td>19</td>   <td>estatística</td> <td>-</td> <td>80</td> 
+            </tr>
+            <tr id="verde">
+              <td>5</td>      <td>20</td>   <td>comércio eletrônico</td>  <td>-</td>      <td>80</td> 
+            </tr>
+            <tr id="roxo">
+              <td>5</td>      <td>21</td>   <td>Ética</td>    <td>-</td>      <td>80</td> 
+            </tr>
+            <tr id="branco">
+              <td>5</td>      <td>22</td>   <td>optativa 2</td>   <td>-</td>      <td>40</td> 
+            </tr>
+            <tr id="roxo">
+              <td>5</td>      <td>23</td>   <td>pjt/trabalho de conclusão cursu</td> <td>21</td>  <td>40</td> 
+            </tr>
+            <tr id="roxo">
+              <td>5</td>      <td>24</td>   <td>atividades complementares</td>  <td>-</td>   <td>100</td> 
+            </tr>
+            <tr>
+              <td></td>     <td></td>   <td></td> <td id="branco">total</td> <td id="branco">500</td>
+            </tr>
+            <tr>
+                <td></td> <td></td> <td></td><td id="branco">tota lgeral</td><td id="branco">2100</td>
+            </tr>
+          </div>
+        </table>
+    </div>
+  </div>
+  <!--sobrepoem o modal na pagina -->
+  <div id="overlay"></div>
+</body>
+</html>
